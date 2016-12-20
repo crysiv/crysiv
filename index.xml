@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CrySiV</title>
-    <link>https://crysiv.github.io/index.xml</link>
+    <link>https://crysiv.github.io/</link>
     <description>Recent content on CrySiV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>

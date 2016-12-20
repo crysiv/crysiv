@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Your description">
 <meta name="author" content="Your name">
-<meta name="generator" content="Hugo 0.17" />
+<meta name="generator" content="Hugo 0.16" />
 <title>CrySiV</title>
 <!-- Stylesheets -->
 <link href="https://crysiv.github.io/css/bootstrap.min.css" rel="stylesheet">
@@ -379,11 +379,23 @@
 									<h3>Download GUI Installation Kit</h3>
 								  </header>
 								  <div class="w3-container">
-										<form method="GET" action="https://www.dropbox.com/s/38rtdfxlpo7wnm4/CrySiV_v1.2_X64.exe?dl=1">
+										<form method="GET">
 										<p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
 
-										 <input type="checkbox" name="checkbox" value="check"  /> I have read and agree to the Terms and Conditions and Privacy Policy.
-										 <input type="submit" name="email_submit" value="Submit" class="btn btn-lg btn-outline" onclick="if(!this.form.checkbox.checked){alert('You must agree to the terms first.');return false}"  />
+										<input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+												 <input type="submit" name="email_submit" value="Submit" class="btn btn-lg btn-outline" 
+													onclick="
+														if (!this.form.checkbox.checked)
+															{
+																alert('You must agree to the terms first.');return false
+															}
+													    else 
+														{
+														
+															window.open('//www.dropbox.com/s/38rtdfxlpo7wnm4/CrySiV_v1.2_X64.exe?dl=1');
+															window.close();
+														}
+												    "  />
 										</form>
 								  </div>
 								  <footer class="w3-container w3-teal">
@@ -433,15 +445,27 @@
 									<div class="w3-modal-content w3-card-8">
 									  <header class="w3-container w3-teal"> 
 										<span onclick="document.getElementById('id02').style.display='none'" 
-										class="w3-closebtn">&times;</span>
+											class="w3-closebtn">&times;</span>
 										<h3>Download Documentation & Tutorials</h3>
 									  </header>
 									  <div class="w3-container">
-											<form method="GET" action="https://www.dropbox.com/s/r6idf6bhtlx3z8u/Documentation%20and%20tutorials.zip?dl=1">
+											<form method="GET">
 											<p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
 
-											 <input type="checkbox" name="checkbox" value="check"  /> I agree to the Terms and Conditions and Privacy Policy.
-											 <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-outline" onclick="if(!this.form.checkbox.checked){alert('You must agree to the terms first.');return false}"  />
+											<input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+												 <input type="submit" name="email_submit" value="Submit" class="btn btn-lg btn-outline" 
+													onclick="
+														if (!this.form.checkbox.checked)
+															{
+																alert('You must agree to the terms first.');return false
+															}
+													    else 
+														{
+														
+															window.open('http//www.dropbox.com/s/38rtdfxlpo7wnm4/CrySiV_v1.2_X64.exe?dl=1');
+															window.close();
+														}
+												    "  />
 											</form>
 									  </div>
 									 
@@ -496,11 +520,23 @@
 											<h3>Download MatLab Functions & Examples</h3>
 										  </header>
 										  <div class="w3-container">
-												<form method="GET" action="https://www.dropbox.com/s/n927dapf724rhzy/Function%20%26%20examples.rar?dl=1">
+												<form method="GET" >
 												<p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
 
-												 <input type="checkbox" name="checkbox" value="check"  /> I have read and agree to the Terms and Conditions and Privacy Policy.
-												 <input type="submit" name="email_submit" value="Submit" class="btn btn-lg btn-outline" onclick="if(!this.form.checkbox.checked){alert('You must agree to the terms first.');return false}"  />
+												 <input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+												 <input type="submit" name="email_submit" value="Submit" class="btn btn-lg btn-outline" 
+													onclick="
+														if (!this.form.checkbox.checked)
+															{
+																alert('You must agree to the terms first.');return false
+															}
+													    else 
+														{
+														
+															window.open('https://www.dropbox.com/s/n927dapf724rhzy/Function%20%26%20examples.rar?dl=1');
+															window.close();
+														}
+												    "  />
 												</form>
 										  </div>
 										  
