@@ -121,7 +121,8 @@
             <div class="col-lg-4 text-justify">
                 <p>If you experience any <strong>problems</strong> during the download, installation or simulations please feel free to <strong>contact us</strong>. Your feedback can made the CrySiV better!<br><strong>Remember:</strong> the CrySiV can be used <strong>free of charge</strong> for non-commercial purposes!</p>
             </div>
-			
+
+           
         
         <!-- MODAL Section -->
         
@@ -129,14 +130,39 @@
 
         <div class="container" id='modal1'>
             <div class='row'>
-                <div class='col-lg-12'>
-                <div class=" text-center" >
+                <div class='col-lg-12 text-center'>
+            
+ <div   id='modal1'>
 
-          <!-- Trigger the modal with a button -->
-          <button type="button" class="btn  btn-lg  btn-outline " id='button' data-toggle="modal" data-target="#myModal">GUI Installation Kit</button>
+          <!-- Trigger the modal with a button OLD BUTTON2
+          <button type="button" class="btn  btn-lg  btn-outline" data-toggle="modal" data-target="#myModal2">Documentation & Tutorials</button> -->
+
+      <a href="#installation" class="btn btn-lg btn-outline" data-toggle="collapse">GUI Installation Kit</a>
+          <div id="installation" class="collapse">
+                  
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class='text-center'>Release version</th>
+                    <th class='text-center'>Release date</th>
+                    <th class='text-center'>Download </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CrySiV 1.2</td>
+                    <td>  2017  </td>
+                    <td><a href="#" id='button' data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-download"> </span> CrySiV_v1.23_X64.exe</a></td>
+                  </tr>
+                     
+                </tbody>
+              </table>
+            
+          </div>
+        
 
           <!-- Modal -->
-          <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal fade" id="myModal1" role="dialog">
             <div class="modal-dialog">
 
               <!-- Modal content-->
@@ -155,7 +181,7 @@
                                                 if (!this.form.checkbox.checked)
                                                     {
                                                       
-                                                     $('#myModal1sub').modal('show');return false
+                                                     $('#myModal2sub').modal('show');return false
                                                     }
                                                 else 
                                                 {
@@ -172,9 +198,10 @@
             </div>
           </div>
 
-        </div>
 
-<div class="modal col-lg-8 col-lg-offset-2 text-center" id="myModal1sub" data-backdrop="static">
+                
+
+<div class="modal col-lg-8 col-lg-offset-2 text-center"  id="myModal1sub" data-backdrop="static">
 	<div class="modal-dialog">
       <div class="modal-content">
       <!-- <div class="modal-header">
@@ -191,16 +218,87 @@
       </div>
     </div>
 </div>
-        
+</div>   
+                
+                    
   <!-- modal 2 -->
 
-<div class=" text-center"  id='modal2'>
+<div   id='modal2'>
 
-          <!-- Trigger the modal with a button -->
-          <button type="button" class="btn  btn-lg  btn-outline" data-toggle="modal" data-target="#myModal2">Documentation & Tutorials</button>
+          <!-- Trigger the modal with a button OLD BUTTON2
+          <button type="button" class="btn  btn-lg  btn-outline" data-toggle="modal" data-target="#myModal2">Documentation & Tutorials</button> -->
 
-          <!-- Modal -->
-          <div class="modal fade" id="myModal2" role="dialog">
+      <a href="#documentation" class="btn btn-lg btn-outline" data-toggle="collapse">Documentation & Tutorials</a>
+          <div id="documentation" class="collapse">
+                  
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class='text-center'>Release version</th>
+                    <th class='text-center'>Release date</th>
+                    <th class='text-center'>Download </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CrySiV GUI step-by-step tutorial</td>
+                    <td>2016</td>
+                      <td><a href="#" id='button' data-toggle="modal" data-target="#myModal2_1"><span class="glyphicon glyphicon-download"> </span> CrySiV_GUI_step_by_step_tutorial.rar</a></td>
+                  </tr>
+                  <tr>
+                    <td>Optimization and NMPC step-by-step</td>
+                    <td>2016</td>
+                    <td><a href="#" id='button' data-toggle="modal" data-target="#myModal2_2"><span class="glyphicon glyphicon-download"> </span> optimization_and_NMPC_step_by_step.rar</a></td>
+                  </tr> 
+                  <tr>
+                    <td>User guide & manual</td>
+                    <td>2016</td>
+                    <td><a href="#" id='button' data-toggle="modal" data-target="#myModal2_3"><span class="glyphicon glyphicon-download"> </span> user_guide_&_manual.rar</a></td>
+                  </tr>                     
+                </tbody>
+              </table>
+            
+          </div>
+        
+
+<!-- Modal 2-1-->
+          <div class="modal fade" id="myModal2_1" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Documentation & Tutorials</h4>
+                </div>
+                <div class="modal-body">
+                  <p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
+                </div>
+                <form method="GET">
+                  <input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+                  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-outline" 
+                                            onclick="
+                                                if (!this.form.checkbox.checked)
+                                                    {
+                                                      
+                                                     $('#myModal2sub').modal('show');return false
+                                                    }
+                                                else 
+                                                {
+                                                window.open('https://www.dropbox.com/s/nnq080eq1zkk282/CrySiV_GUI_step_by_step_tutorial.rar?dl=1');
+                                                    window.close();
+                                                }
+                                            "  >
+                  </form>
+                  <br>
+
+              </div>
+
+            </div>
+          </div>
+
+<!-- Modal 2-2 -->
+          <div class="modal fade" id="myModal2_2" role="dialog">
             <div class="modal-dialog">
 
               <!-- Modal content-->
@@ -224,7 +322,7 @@
                                                 else 
                                                 {
 
-                                                    window.open('https://www.dropbox.com/s/mwxr3x0guylgo1t/Documentation%26tutorials.rar?dl=1');
+                                                    window.open('https://www.dropbox.com/s/zko8w45v2lzoiu0/Crystallization_optimization_and_NMPC_step_by_step.rar?dl=1');
                                                     window.close();
                                                 }
                                             "  >
@@ -236,8 +334,42 @@
             </div>
           </div>
 
-        </div>
-                
+ <!-- Modal 2-3-->
+          <div class="modal fade" id="myModal2_3" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Documentation & Tutorials</h4>
+                </div>
+                <div class="modal-body">
+                  <p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
+                </div>
+                <form method="GET">
+                  <input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+                  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-outline" 
+                                            onclick="
+                                                if (!this.form.checkbox.checked)
+                                                    {
+                                                      
+                                                     $('#myModal2sub').modal('show');return false
+                                                    }
+                                                else 
+                                                {
+
+                                                    window.open('https://www.dropbox.com/s/5a02pr1ixo1up7l/User_guide_%26_manual.rar?dl=1');
+                                                    window.close();
+                                                }
+                                            "  >
+                  </form>
+                  <br>
+
+              </div>
+
+            </div>
+          </div>               
 
 <div class="modal col-lg-8 col-lg-offset-2 text-center"  id="myModal2sub" data-backdrop="static">
 	<div class="modal-dialog">
@@ -256,15 +388,89 @@
       </div>
     </div>
 </div>
-        
+</div>   
+                    
 <!--modal3-->
   <div class="  text-center" id='modal3'>
 
-          <!-- Trigger the modal with a button -->
-          <button type="button" class="btn  btn-lg  btn-outline" data-toggle="modal" data-target="#myModal3">MatLab Functions & Examples</button>
+          <!-- Trigger the modal with a button 
+          <button type="button" class="btn  btn-lg  btn-outline" data-toggle="modal" data-target="#myModal3">MatLab Functions & Examples</button> -->
+ 
+            <a href="#function" class="btn btn-lg btn-outline" data-toggle="collapse">MatLab Functions & Examples</a>
+          <div id="function" class="collapse">
+                  
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class='text-center'>Function / Example</th>
+                    <th class='text-center'>Release date</th>
+                    <th class='text-center'>Download </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Custom temperature profile</td>
+                    <td>2016</td>
+                      <td><a href="#" id='button' data-toggle="modal" data-target="#myModal3_1"><span class="glyphicon glyphicon-download"> </span>  custom_temperature_profile.rar</a></td>
+                  </tr>
+                  <tr>
+                    <td>Cyclic temperature profile</td>
+                    <td>2016</td>
+                    <td><a href="#" id='button' data-toggle="modal" data-target="#myModal3_2"><span class="glyphicon glyphicon-download"> </span> cyclic_temperature_profile.rar</a></td>
+                  </tr> 
+                  <tr>
+                    <td>Dissolution, 1D</td>
+                    <td>2016</td>
+                    <td><a href="#" id='button' data-toggle="modal" data-target="#myModal3_3"><span class="glyphicon glyphicon-download"> </span> dissolution_1D.rar</a></td>
+                  </tr>
+                  <tr>
+                    <td>Dissolution, 2D</td>
+                    <td>2016</td>
+                      <td><a href="#" id='button' data-toggle="modal" data-target="#myModal3_4"><span class="glyphicon glyphicon-download"> </span> dissolution_2D.rar</a></td>
+                  </tr>
+                  <tr>
+                    <td>Dynamic simulation, 1D</td>
+                    <td>2016</td>
+                    <td><a href="#" id='button' data-toggle="modal" data-target="#myModal3_5"><span class="glyphicon glyphicon-download"> </span> dynamic_simulation_1D.rar</a></td>
+                  </tr> 
+                  <tr>
+                    <td>Dynamic simulation, 2D</td>
+                    <td>2016</td>
+                    <td><a href="#" id='button' data-toggle="modal" data-target="#myModal3_6"><span class="glyphicon glyphicon-download"> </span> dynamic_simulation_2D.rar</a></td>
+                  </tr>
+                  <tr>
+                    <td>GPU acceleration, 1D</td>
+                    <td>2016</td>
+                      <td><a href="#" id='button' data-toggle="modal" data-target="#myModal3_7"><span class="glyphicon glyphicon-download"> </span> GPU_acceleration_1D.rar</a></td>
+                  </tr>
+                  <tr>
+                    <td>GPU acceleration, 2D</td>
+                    <td>2016</td>
+                    <td><a href="#" id='button' data-toggle="modal" data-target="#myModal3_8"><span class="glyphicon glyphicon-download"> </span> GPU_acceleration_2D.rar</a></td>
+                  </tr> 
+                  <tr>
+                    <td>High resolution, 1D</td>
+                    <td>2016</td>
+                    <td><a href="#" id='button' data-toggle="modal" data-target="#myModal3_9"><span class="glyphicon glyphicon-download"> </span> high_resolution_1D.rar</a></td>
+                  </tr>
+                  <tr>
+                    <td>High resolution, 2D</td>
+                    <td>2016</td>
+                      <td><a href="#" id='button' data-toggle="modal" data-target="#myModal3_10"><span class="glyphicon glyphicon-download"> </span> high_resolution_2D.rar</a></td>
+                  </tr>
+                  <tr>
+                    <td>Non-uniform grid, 1D</td>
+                    <td>2016</td>
+                    <td><a href="#" id='button' data-toggle="modal" data-target="#myModal3_11"><span class="glyphicon glyphicon-download"> </span> non_uniform_grid_1D.rar</a></td>
+                  </tr> 
+                </tbody>
+              </table>
+            
+          </div>
+      
 
-          <!-- Modal -->
-          <div class="modal fade" id="myModal3" role="dialog">
+          <!-- Modal 3-1-->
+          <div class="modal fade" id="myModal3_1" role="dialog">
             <div class="modal-dialog">
 
               <!-- Modal content-->
@@ -288,7 +494,7 @@
                                                 else 
                                                 {
 
-                                                    window.open('https://www.dropbox.com/s/7e6d16m8vc8wdwy/Function%20%26%20examples.rar?dl=1');
+                                                    window.open('https://www.dropbox.com/s/n7elsfqt4gk2nbr/custom_temperature_profile.rar?dl=1');
                                                     window.close();
                                                 }
                                             "  >
@@ -302,6 +508,380 @@
 
         </div>
 
+          <!-- Modal 3-2 -->
+          <div class="modal fade" id="myModal3_2" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">MatLab Functions & Examples</h4>
+                </div>
+                <div class="modal-body">
+                  <p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
+                </div>
+                <form method="GET">
+                  <input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+                  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-outline" 
+                                            onclick="
+                                                if (!this.form.checkbox.checked)
+                                                    {
+                                                      
+                                                     $('#myModal3sub').modal('show');return false
+                                                    }
+                                                else 
+                                                {
+
+                                                    window.open('https://www.dropbox.com/s/5ql4wlmz7s3jsnl/cyclic_temperature_profile.rar?dl=1');
+                                                    window.close();
+                                                }
+                                            "  >
+                  </form>
+                  <br>
+
+              </div>
+
+            </div>
+          </div>
+                    
+
+                    
+          <!-- Modal 3-3 -->
+          <div class="modal fade" id="myModal3_3" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">MatLab Functions & Examples</h4>
+                </div>
+                <div class="modal-body">
+                  <p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
+                </div>
+                <form method="GET">
+                  <input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+                  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-outline" 
+                                            onclick="
+                                                if (!this.form.checkbox.checked)
+                                                    {
+                                                      
+                                                     $('#myModal3sub').modal('show');return false
+                                                    }
+                                                else 
+                                                {
+
+                                                    window.open('https://www.dropbox.com/s/k7ba92et07iwi7e/dissolution_1D.rar?dl=1');
+                                                    window.close();
+                                                }
+                                            "  >
+                  </form>
+                  <br>
+
+              </div>
+
+            </div>
+          </div>
+                    
+          <!-- Modal 3-4 -->
+          <div class="modal fade" id="myModal3_4" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">MatLab Functions & Examples</h4>
+                </div>
+                <div class="modal-body">
+                  <p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
+                </div>
+                <form method="GET">
+                  <input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+                  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-outline" 
+                                            onclick="
+                                                if (!this.form.checkbox.checked)
+                                                    {
+                                                      
+                                                     $('#myModal3sub').modal('show');return false
+                                                    }
+                                                else 
+                                                {
+
+                                                    window.open('https://www.dropbox.com/s/9wbut65lhfgotqs/dissolution_2D.rar?dl=1');
+                                                    window.close();
+                                                }
+                                            "  >
+                  </form>
+                  <br>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Modal 3-5 -->
+          <div class="modal fade" id="myModal3_5" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">MatLab Functions & Examples</h4>
+                </div>
+                <div class="modal-body">
+                  <p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
+                </div>
+                <form method="GET">
+                  <input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+                  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-outline" 
+                                            onclick="
+                                                if (!this.form.checkbox.checked)
+                                                    {
+                                                      
+                                                     $('#myModal3sub').modal('show');return false
+                                                    }
+                                                else 
+                                                {
+
+                                                    window.open('https://www.dropbox.com/s/9p7fmcoxgrjqfqr/dynamic_simulation_1D.rar?dl=1');
+                                                    window.close();
+                                                }
+                                            "  >
+                  </form>
+                  <br>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Modal 3-6 -->
+          <div class="modal fade" id="myModal3_6" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">MatLab Functions & Examples</h4>
+                </div>
+                <div class="modal-body">
+                  <p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
+                </div>
+                <form method="GET">
+                  <input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+                  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-outline" 
+                                            onclick="
+                                                if (!this.form.checkbox.checked)
+                                                    {
+                                                      
+                                                     $('#myModal3sub').modal('show');return false
+                                                    }
+                                                else 
+                                                {
+
+                                                    window.open('https://www.dropbox.com/s/4ndf9rv17dudcig/dynamic_simulation_2D.rar?dl=1');
+                                                    window.close();
+                                                }
+                                            "  >
+                  </form>
+                  <br>
+
+              </div>
+
+            </div>
+          </div>
+    
+          <!-- Modal 3-7 -->
+          <div class="modal fade" id="myModal3_7" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">MatLab Functions & Examples</h4>
+                </div>
+                <div class="modal-body">
+                  <p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
+                </div>
+                <form method="GET">
+                  <input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+                  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-outline" 
+                                            onclick="
+                                                if (!this.form.checkbox.checked)
+                                                    {
+                                                      
+                                                     $('#myModal3sub').modal('show');return false
+                                                    }
+                                                else 
+                                                {
+
+                                                    window.open('https://www.dropbox.com/s/zcnnwo2rqgv3c5q/GPU_acceleration_1D.rar?dl=1');
+                                                    window.close();
+                                                }
+                                            "  >
+                  </form>
+                  <br>
+
+              </div>
+
+            </div>
+          </div>
+                    
+          <!-- Modal 3-8 -->
+          <div class="modal fade" id="myModal3_8" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">MatLab Functions & Examples</h4>
+                </div>
+                <div class="modal-body">
+                  <p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
+                </div>
+                <form method="GET">
+                  <input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+                  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-outline" 
+                                            onclick="
+                                                if (!this.form.checkbox.checked)
+                                                    {
+                                                      
+                                                     $('#myModal3sub').modal('show');return false
+                                                    }
+                                                else 
+                                                {
+
+                                                    window.open('https://www.dropbox.com/s/1nzwnore7jpij5j/GPU_acceleration_2D.rar?dl=1');
+                                                    window.close();
+                                                }
+                                            "  >
+                  </form>
+                  <br>
+
+              </div>
+
+            </div>
+          </div>
+                    
+          <!-- Modal 3-9 -->
+          <div class="modal fade" id="myModal3_9" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">MatLab Functions & Examples</h4>
+                </div>
+                <div class="modal-body">
+                  <p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
+                </div>
+                <form method="GET">
+                  <input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+                  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-outline" 
+                                            onclick="
+                                                if (!this.form.checkbox.checked)
+                                                    {
+                                                      
+                                                     $('#myModal3sub').modal('show');return false
+                                                    }
+                                                else 
+                                                {
+
+                                                    window.open('https://www.dropbox.com/s/o8noffsvwqzrix8/high_resolution_1D.rar?dl=1');
+                                                    window.close();
+                                                }
+                                            "  >
+                  </form>
+                  <br>
+
+              </div>
+
+            </div>
+          </div>                    
+ 
+           <!-- Modal 3-10 -->
+          <div class="modal fade" id="myModal3_10" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">MatLab Functions & Examples</h4>
+                </div>
+                <div class="modal-body">
+                  <p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
+                </div>
+                <form method="GET">
+                  <input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+                  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-outline" 
+                                            onclick="
+                                                if (!this.form.checkbox.checked)
+                                                    {
+                                                      
+                                                     $('#myModal3sub').modal('show');return false
+                                                    }
+                                                else 
+                                                {
+
+                                                    window.open('https://www.dropbox.com/s/9aruv9ip6p5pka9/high_resolution_2D.rar?dl=1');
+                                                    window.close();
+                                                }
+                                            "  >
+                  </form>
+                  <br>
+
+              </div>
+
+            </div>
+          </div>                   
+ 
+          <!-- Modal 3-11 -->
+          <div class="modal fade" id="myModal3_11" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">MatLab Functions & Examples</h4>
+                </div>
+                <div class="modal-body">
+                  <p>CrySiV v1.2 is free to use for non-commercial purposes. If you wish to use the CrySiV v1.2 function or GUI for scientific purposes please cite our publications and software. Any feedback is welcome!</p>
+                </div>
+                <form method="GET">
+                  <input type="checkbox" name="checkbox" value="check"  /> Got it!<br>
+                  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-outline" 
+                                            onclick="
+                                                if (!this.form.checkbox.checked)
+                                                    {
+                                                      
+                                                     $('#myModal3sub').modal('show');return false
+                                                    }
+                                                else 
+                                                {
+
+                                                    window.open('https://www.dropbox.com/s/sr8e7bmi8gnsdbx/non_uniform_grid_1D.rar?dl=1');
+                                                    window.close();
+                                                }
+                                            "  >
+                  </form>
+                  <br>
+
+              </div>
+
+            </div>
+          </div>                
+    
+        </div>
+                    
 <div class="modal col-lg-8 col-lg-offset-2 text-center"  id="myModal3sub" data-backdrop="static">
 	<div class="modal-dialog">
       <div class="modal-content">
@@ -319,7 +899,8 @@
       </div>
     </div>
 </div>
-                
+
+
                 
 </div>
 </div>
@@ -339,33 +920,34 @@ var modal = document.getElementById('modal1sub');
         modal.style.display = "none";
     }
 }
-    
+
 var modal = document.getElementById('modal2');
     window.onclick = function(event) {
-    if (event.target == modal1) {
+    if (event.target == modal2) {
         modal.style.display = "none";
     }
 }
     
 var modal = document.getElementById('modal2sub');
     window.onclick = function(event) {
-    if (event.target == modal1sub) {
+    if (event.target == modal2sub) {
         modal.style.display = "none";
     }
 }
 var modal = document.getElementById('modal3');
     window.onclick = function(event) {
-    if (event.target == modal1) {
+    if (event.target == modal3) {
         modal.style.display = "none";
     }
 }
     
 var modal = document.getElementById('modal3sub');
     window.onclick = function(event) {
-    if (event.target == modal1sub) {
+    if (event.target == modal3sub) {
         modal.style.display = "none";
     }
-}
+} 
+    
 </script>
 							
 
